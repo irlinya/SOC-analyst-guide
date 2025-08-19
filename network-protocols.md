@@ -55,4 +55,51 @@ By mastering the basics, you’ll detect threats faster.
 
 ---
 
+## 🔹 ARP and MAC Concepts  
+
+### 🛰️ ARP (Address Resolution Protocol)  
+- Resolves **IP addresses into MAC addresses** within the same LAN.  
+- **Workflow:**  
+  1. Device checks its **ARP cache**.  
+  2. If no entry is found, it sends an **ARP Request** → *“Who has this IP? Tell me your MAC.”*  
+  3. The device with that IP responds with an **ARP Reply** (its MAC address).  
+
+**SOC Relevance:**  
+- Very important in **Wireshark packet analysis**.  
+- **Suspicious Indicators (ARP Poisoning):**  
+  - Multiple MACs bound to one IP  
+  - Unusual or frequent ARP replies  
+  - Sudden redirection of traffic  
+- Often used in **Man-in-the-Middle (MITM)** attacks.  
+
+---
+
+### 💻 MAC Address (Media Access Control)  
+- A **unique 48-bit identifier** assigned to each network interface card (NIC).  
+- Format: `00:1A:2B:3C:4D:5E`  
+
+**Structure:**  
+- First 3 bytes → **OUI (Organizationally Unique Identifier)** = vendor code (e.g., Intel, Cisco).  
+- Last 3 bytes → **UAA (Universally Administered Address)** = device-specific identifier.  
+
+**Functions:**  
+- Identifies devices uniquely in a LAN.  
+- Helps prevent unwanted access (e.g., via **MAC filtering**).  
+- Used for device tracking and security monitoring.  
+
+---
+
+### 🛠️ How to Find MAC Address
+1. Open the **search bar** on your device.  
+2. Type `"cmd"` and open the Command Prompt.  
+3. Run: ipconfig /all
+4. Look for the line labeled **“Physical Address”** → this is your MAC.  
+
+✅ Example: `00:1A:2B:3C:4D:5E`  
+- `00:1A:2B` → Vendor (Intel)  
+- `3C:4D:5E` → Unique device part  
+
+---
+
+
 
