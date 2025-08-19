@@ -1,5 +1,4 @@
-# Network Protocols — Part 1  
-*A SOC Analyst Learning Note*  
+# Network Protocols
 
 Understanding network protocols is fundamental for SOC analysts.  
 Most security alerts and attacks leave their footprints in network traffic.  
@@ -56,15 +55,4 @@ By mastering the basics, you’ll detect threats faster.
 
 ---
 
-## 📝 Next Steps  
-
-This is **Part 1: Network Protocols**.  
-Coming soon:  
-- **Part 2: ARP & MAC Concepts**  
-- **Part 3: Advanced Packet Analysis with Wireshark**  
-
----
-
-👩‍💻 *Author: Irem*  
-Learning journey towards becoming a **SOC Analyst** 🚀  
 
